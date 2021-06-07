@@ -1,19 +1,40 @@
 # RxFM Starter App
 
-A project with all the configuration needed to get started with the [RxFM](https://github.com/alden12/rxfm) JavaScript framework.
+Welcome to the RxFM starter app! You can learn more about RxFM on its [GitHub page](https://github.com/alden12/rxfm).
 
-To get started (with git and node installed) open a terminal in the desired location and run:
-```
-git clone https://github.com/alden12/rxfm-starter-app.git
-```
-Alternatively download, use GitHub template, or fork this repo and clone the fork.
+## Getting Started
 
-Then change into the newly created directory and run:
-```
+Make sure you have [Node](https://nodejs.org/) installed, then in the app root directory run:
+```sh
 npm install
 ```
-When the install is complete run:
-```
+
+Followed by:
+```sh
 npm start
 ```
-to start the live development server, then open a browser window to http://localhost:3000/.
+
+Once this has finished, open your browser to [localhost:4200](http://localhost:4200/) to view the live app!
+
+## Build the App
+
+You can build the app by running:
+```sh
+npm run build
+```
+
+This will output the built files into the `/dist` folder. 
+
+## Running Unit Tests
+
+Run jest unit tests using:
+```sh
+npm run test
+```
+
+Or use the following to run tests with automatic file change watching enabled:
+```sh
+npm run test:watch
+```
+
+---

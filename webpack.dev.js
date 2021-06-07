@@ -7,16 +7,16 @@ module.exports = [
     devtool: "inline-source-map",
     devServer: {
       contentBase: path.join(__dirname, "dist"),
-      port: 3000,
+      port: 4200,
       compress: true
     },
-    entry: './src/index.ts',
+    entry: './src/app/index.ts',
     output: {
       filename: 'app.bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
-      extensions: [".ts", ".js", ".json"]
+      extensions: [".ts", ".js", ".json"],
     },
     module: {
       rules: [
@@ -29,7 +29,7 @@ module.exports = [
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
           exclude: '/node_modules/'
-        },
+        }
       ]
     },
     plugins: [new HtmlWebpackPlugin()]

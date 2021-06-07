@@ -5,7 +5,7 @@ module.exports = [
   {
     mode: "production",
     devtool: "source-map",
-    entry: "./src/index.ts",
+    entry: "./src/app/index.ts",
     output: {
       filename: 'app.bundle.js',
       path: path.resolve(__dirname, 'dist'),
